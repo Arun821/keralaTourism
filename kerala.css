@@ -1,4 +1,4 @@
- .n{
+.n{
     width: 100%;
     
 
@@ -93,83 +93,58 @@ img {vertical-align: middle;}
     width: 100%;
     margin-top: 50px;
 }
-/* .log{
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-    background: url('79-799603_dark-nature-wallpaper-high-resolution-for-free-wallpaper.jpg') no-repeat ;
-    background-size: cover;
-}
-.login-box{
-    width: 300px;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50% -50%);
-    color: #f0fff0;
-}
-.login-box h1{
-    float: left;
-    font-size: 40px;
-    margin-bottom: 50px;
-    padding: 13px 0;
-}
-.textbox{
-    width: 100%;
-    overflow: hidden;
-    font-size: 20px;
-    padding: 8px 0;
-    margin: 8px 0;
-}
-.textbox input{
-    border: none;
-    outline: none;
-    background: none;
-    color: rgb(231, 235, 231);
-    font-size: 18px;
-    width: 80px;
-    float: left;
-}
-.btn{
-    width: 100%;
-    background: none;
-    border: 2px solid hsl(19, 97%, 49%);
-    color: white;
-    padding: 5px;
-    font-size: 18px;
-    cursor: pointer;
-} */
+
 /* .........................sign up.......................... */
 .bak{
-    background: url('Alleppey-05.jpg') no-repeat;
+    background: url('https://i.pinimg.com/originals/c2/24/c7/c224c7780a54fb8088a2017ee1470a88.jpg') no-repeat;
     background-size: cover;
+    width: 100%;
+    height: auto;
 }
 .ft{
     font-family: 'Times New Roman', Times, serif;
     font-size: 40px;
+    width: 500px;
+    text-align: center;
+}
+.al{
+    width: 50%;
+    margin-left: 80px;
 }
 .sign-up-box{
-    top: 25%;
-    left: 30%;
-    position: absolute;
+    display: flex;
+    align-items: center;
+    margin-top: 10%;
+    border: currentColor;
+    width: 60%;
+    height: auto;
+    position: relative;
+}
+.sign-up-box input[type="text"], input[type="password"], input[type="email"]{
+    background: none;
+    
 }
 .sign-up-box input[type="text"]{
-    background: none;
+    background-color: transparent;
 }
+
 .sign-up-box input[type="password"]{
-    background: none;
+    background-color: transparent;
 }
+
 .sign-up-box input[type="email"]{
-    background: none;
+    background-color: transparent;
 }
-.btn1{
+
+
+ .btn1{
     width: 30%;
     background: none;
     border: 2px solid #04f7e3;
     color: white;
     padding: 5px;
     border-radius: 25px;
-}
+} 
 .btn2{
     width: 30%;
     background: none;
@@ -188,6 +163,7 @@ img {vertical-align: middle;}
 .inputWithIcon input[type="text"], .inputWithIcon input[type="password"], .inputWithIcon input[type="email"]{
     color: lavender;
     padding-left: 50px;
+    background: transparent;
 }
 .inputWithIcon{
     position: relative;
@@ -198,6 +174,19 @@ img {vertical-align: middle;}
     padding-top: 5px;
     padding-left: 10px;
 }
+input[type="email"]::-webkit-input-placeholder {
+    color: blue !important;
+    opacity: 1;
+    }
+input[type="password"]::-webkit-input-placeholder {
+    color: blue !important;
+    opacity: 1;
+    }
+input[type="text"]::-webkit-input-placeholder {
+    color: blue !important;
+    opacity: 1;
+    }
+
 /* ............................sign up ends................... */
 .bc{
     background: url('2018070472.png') no-repeat;
@@ -234,6 +223,7 @@ img {vertical-align: middle;}
 .bg{
     background-color: rgba(28, 32, 30, 0.342);
     height: 100px;
+    width: auto;
     
 }
 
@@ -303,6 +293,8 @@ div.gallery {
     font-size: 70px;
     font-weight: 800;
     color:rgba(225,225,225,1);
+    width: auto;
+    height: auto;
 }
 .bc2{
     width: 100%;
@@ -378,6 +370,8 @@ div.gallery {
 }
 /* ......................................ends............................ */
 
+/*.................................Login home.................................*/
+
 .wid{
     width: 100%;
     background-size: cover;
@@ -389,7 +383,6 @@ div.gallery {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    background: url('dark.jpg') no-repeat;
     height: 1000px;
 }
 .box{
@@ -402,12 +395,12 @@ div.gallery {
     text-align: center;
 
 }
-.box input[type= "text"], .box input[type= "password"]{
+.box input[type= "email"], .box input[type= "password"]{
     border: 0;
     background: none;
     display: block;
     margin: 20px auto;
-    text-align: center;
+    /* text-align: center; */
     border: 2px solid rgb(7, 158, 245);
     padding: 14px 10px;
     width: 200px;
@@ -416,7 +409,7 @@ div.gallery {
     border-radius: 24px;
     transition: 0.25s;
 }
-.box input[type= "text"]:focus, .box input[type= "password"]:focus{
+.box input[type= "email"]:focus, .box input[type= "password"]:focus{
     width: 280px;
     border-color: yellow;
 }
@@ -432,6 +425,7 @@ div.gallery {
     color: white;
     border-radius: 24px;
     transition: 0.25s;
+    width: 200px;
 }
 .box input[type= "submit"]:hover{
     background: rgb(50, 187, 205);
@@ -439,6 +433,8 @@ div.gallery {
 .box h1{
     color: white;
 }
+
+/*...................................footer....................*/
 
 .footer{
 background-color: rgba(146, 146, 145, 0.39);
@@ -449,6 +445,8 @@ bottom: 0;
 }
 .hb{
     background: url('alleppey-1486285822.jpg') no-repeat;
+    background-size: cover;
+    height: auto;
     
 }
 .kr{
@@ -456,4 +454,78 @@ bottom: 0;
     height: 100%;
 }
 /* ..................animation................. */
-.co
+/*..............................Login page....................*/
+
+.bdy1{
+    background: url('https://wallpaperaccess.com/full/1635203.jpg') no-repeat;
+    background-position: unset;
+}
+.login-box{
+    width: 500px;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    background: rgb(0, 0,0,0.4);
+    text-align: center;
+    margin-top: 100px;
+    padding: 35px;
+    border: 1px solid #fff;
+    -webkit-border-radius: 70px 0 70px 0;
+    -moz-border-radius:70px 0 70px 0;
+    border-radius: 70px 0 70px 0;
+    display: block;
+}
+input{
+    width: 100%;
+    height: 50px;
+    border-radius: 15px 0 15px 0;
+    border: 1px solid #fff;
+    margin-bottom: 15px;
+    background-color: transparent;
+    color: #fff;
+    outline: none;
+    
+}
+.login-box p{
+    text-align: left;
+    color: seashell;
+    font-family: 'Aguafina Script', cursive;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.login-box input[type="submit"]:hover{
+    color: #000;
+    
+    background: rgba(11, 44, 27, 0.158);
+}
+.login-box input[type="submit"]{
+    font-family: 'Shadows Into Light', cursive;
+    width: 50%;
+    border-radius: 50px;
+
+}
+.login-box h1{
+    text-transform: uppercase;
+    color: wheat;
+    font-family: 'Aguafina Script', cursive;
+    font-weight: bold;
+}
+.login-box h5{
+    color: wheat;
+    font-family: 'Aguafina Script', cursive;
+    font-weight: bold;
+}
+/*..............footer.................*/
+.fotr{
+    width: 100%;
+    background: #71717157;
+    text-align: center;
+    height: 30px;
+    margin-top: 45px;
+}
+.hr{
+    color: rgba(11, 44, 27, 0.747);
+    text-decoration: none;
+}
+

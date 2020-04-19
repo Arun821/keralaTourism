@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up</title>
+    <title>SIGN UP</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"">
-    <link rel="stylesheet" href="kerala.css" type="text/css">
+    <link rel="stylesheet" media="all" href="kerala.css" type="text/css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -32,29 +32,37 @@
         </ul>
         <div class="fnt"><p>Kerala Tourism</p></div>
       </nav>
-    <div class="container">
 
-        <form action="/action_page.php" class="sign-up-box">
-          <p class="fa ft">Join With Us</p>
+    <div class="container">
+      
+        <form id="myForm" action="login.html" class="sign-up-box" onsubmit="return validation()">
+          
             <div class="inputWithIcon">
-              <i class="fa fa-2x fa-user" aria-hidden="true"></i>
-            <input type="text" placeholder="Full Name" class="form-control bg-none" name="" value=""><br>           
-            <i class="fa fa-2x fa-envelope-o" aria-hidden="true"></i>
-            <input type="email" placeholder="Email id" class="form-control" name="" value=""><br>
-            <i class="fa fa-2x fa-mobile" aria-hidden="true"></i>
-            <input type="text" placeholder="Phone Number" name="" value="" class="form-control"><br>
-            <i class="fa fa-2x fa-key" aria-hidden="true"></i>
-            <input type="password" placeholder="Password" name="" class="form-control" value=""><br>
-            <label class="fa">Password must be more than 8 characters including alphabets and numbers</label><br>
-            <i class="fa fa-2x fa-lock" aria-hidden="true"></i>
-            <input type="password" placeholder="Confirm password" class="form-control" name=""value><br>
-            <button class="btn1">Sign in</button>
-            <button class="btn2">Cancel</button>
+              <div class="al"><h2 class="fa ft">Join With Us</h2></div>
+                <i class="fa fa-2x fa-user" aria-hidden="true"></i>
+                <input type="text" id="nam" placeholder="Full Name" class="form-control bg-none" name="" value=""><br> 
+                <p class="text-dark font-weight-bolder" id="p1"></p>          
+                <i class="fa fa-2x fa-envelope-o" aria-hidden="true"></i>
+                <input type="email" id="mail" placeholder="Email id" class="form-control" name="" value=""><br>
+                <p class="text-dark font-weight-bolder" id="p2"></p>    
+                <i class="fa fa-2x fa-mobile" aria-hidden="true"></i>
+                <input type="text" id="phn" placeholder="Phone Number" name="" value="" class="form-control"><br>
+                <p class="text-dark font-weight-bolder" id="p3"></p>    
+                <i class="fa fa-2x fa-key" aria-hidden="true"></i>
+                <input type="password" id="pass" onkeyup="return passwordChanged()" placeholder="Password" name="" class="form-control" value=""><br>
+                <span id="strength"></span>
+                <p class="text-dark font-weight-bolder" id="p4"></p>    
+                
+                <i class="fa fa-2x fa-lock" aria-hidden="true"></i>
+                <input type="password" id="cpass" placeholder="Confirm password" class="form-control" name=""value><br>
+                <p class="text-dark font-weight-bolder" id="p5"></p>    
+                <input type="submit" class="btn1" value="Sign in">
+                <input type="reset" class="btn2"> 
             </div>            
         </form>
     </div>
-    <div class="footer">
-      @keralatourism
-    </div>
+    <div class="fotr"><a href="https://www.keralatourism.org/" class="hr">@keralatourism</a></div>
+    <script src="kerala.js"></script>
+    </script>
 </body>
 </html>

@@ -102,7 +102,7 @@
     </div>
     <div class="col-md-4 col-md-4 col-md-4  ">
       <iframe class="frm" width="560" height="315" src="https://www.youtube.com/embed/R83BlU5nnbs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      
+      <div class="info">
         <h2 class="fa">Major Cities</h2>
         <label class="fa">Thiruvananthapuram</label><br>
         <label class="fa">Kollam</label><br>
@@ -114,22 +114,25 @@
         <label class="fa">Cochin International Airport (CIAL), Nedumbassery</label><br>
         <label class="fa">Calicut International Airport, Karipur</label><br>
         <label class="fa">Kannur International Airport</label><br>
-    
+      </div>
     </div>
     <div class="col-md-4 col-md-4 col-md-4 lo  ">
-      <form action="index.html" class="box" method="POST">
+      <form action="signUp.html" class="box" onsubmit="return validate()">
         <h1>Login</h1>
-        <input type="text" name="" placeholder="Username">
-        <input type="password" name="" placeholder="Password">
-        <input type="submit" name="" value="Login">
+        <input type="email" id="uname" name="" placeholder="Email">
+        <input type="password" id="pwd" name="" placeholder="Password">
+        <p id="pr" class="text-danger"></p>
+        <input type="submit" id="sub" name="" value="Login">
         <a href="signUp.html" style="text-decoration: none;">Create a new Account</a>
       </form>
       <iframe src="https://calendar.google.com/calendar/embed?src=en.indian%23holiday%40group.v.calendar.google.com&ctz=Asia%2FKolkata" style="border: 0; margin-top: 550px;" width="100%" height="300" frameborder="5" scrolling="no"></iframe>
     </div>
   </div>
-  </div>
   <div class="footer">
     @keralatourism
   </div>
+  </div>
+  
+  <script src="kerala.js"></script>
 </body>
 </html>
