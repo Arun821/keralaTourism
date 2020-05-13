@@ -17,8 +17,7 @@
 </head>
 <body>
     <div class="n">
-        
-          
+                
             <div id="demo" class="carousel wid slide" data-ride="carousel">
             <ul class="carousel-indicators">
               <li data-target="#demo" data-slide-to="0" class="active"></li>
@@ -74,6 +73,9 @@
                 <li class="nav-item">
                   <a class="nav-link text-primary" href="about">About</a>
                 </li>
+                <li class="nav-item">
+                  <a class="nav-link text-primary" href="login.html">Login</a>
+                </li>
               </ul>
               <div class="fnt"><p>Kerala Tourism</p></div>
             </nav>
@@ -102,7 +104,7 @@
     </div>
     <div class="col-md-4 col-md-4 col-md-4  ">
       <iframe class="frm" width="560" height="315" src="https://www.youtube.com/embed/R83BlU5nnbs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <div class="info">
+      
         <h2 class="fa">Major Cities</h2>
         <label class="fa">Thiruvananthapuram</label><br>
         <label class="fa">Kollam</label><br>
@@ -114,25 +116,21 @@
         <label class="fa">Cochin International Airport (CIAL), Nedumbassery</label><br>
         <label class="fa">Calicut International Airport, Karipur</label><br>
         <label class="fa">Kannur International Airport</label><br>
-      </div>
+    
     </div>
     <div class="col-md-4 col-md-4 col-md-4 lo  ">
-      <form action="signUp.html" class="box" onsubmit="return validate()">
+      <form action="https://www.ekeralatourism.net/" method="POST" class="box" onsubmit="return submitHere()">
         <h1>Login</h1>
-        <input type="email" id="uname" name="" placeholder="Email">
-        <input type="password" id="pwd" name="" placeholder="Password">
-        <p id="pr" class="text-danger"></p>
-        <input type="submit" id="sub" name="" value="Login">
+        <input type="email" id="mail" placeholder="Email"> 
+        <input type="password" name="" id="pass" placeholder="Password">
+        <input type="submit" value="Submit">
         <a href="signUp.html" style="text-decoration: none;">Create a new Account</a>
       </form>
       <iframe src="https://calendar.google.com/calendar/embed?src=en.indian%23holiday%40group.v.calendar.google.com&ctz=Asia%2FKolkata" style="border: 0; margin-top: 550px;" width="100%" height="300" frameborder="5" scrolling="no"></iframe>
     </div>
   </div>
-  <div class="footer">
-    @keralatourism
   </div>
-  </div>
-  
+  <div class="fotr"><a href="https://www.keralatourism.org/" class="hr">@keralatourism</a></div>
   <script src="kerala.js"></script>
 </body>
 </html>
