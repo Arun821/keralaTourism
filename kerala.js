@@ -1,16 +1,19 @@
-let name = document.getElementById("uname").value;
-let psd = document.getElementById("pswd").value;
-
-function validate(){
-    if((name=="") || (psd=="")){
-     document.getElementById("pr").innerHTML = "Invalid inputs, please enter a valid email and password";
-     return false
-    }   
+/*..................login....................*/
+function submitHere(){
+    var email = document.getElementById("mail").value;
+    var password = document.getElementById("pass").value;
+    if(email=="" || password==""){
+        alert("email or password is empty");
+        return false;
+    }
     else{
+        window.location = "https://www.ekeralatourism.net/";
         return true;
     }
+}
 
-var x = document.getElementById("head1").value;
+
+
 
 //...................Sign Up........................//
 function validation(){
@@ -61,21 +64,7 @@ document.getElementById("strength").setAttribute("hidden", true);
         document.getElementById("p4").innerHTML = "Password must contain atleast one uppercase letter";
         return false;
     }
-    else if(password.length==8){
-        document.getElementById("p4").innerHTML = "Password strength is poor";
-        document.getElementById("p4").style.color = "red";
-        return false;
-    }
-    else if(password.length==12){
-        document.getElementById("p4").innerHTML = "Password strength is normal";
-        document.getElementById("p4").style.color = "orange";
-        return false;
-    }
-    else if(password.length==16){
-        document.getElementById("p4").innerHTML = "Password strength is strong";
-        document.getElementById("p4").style.color = "green";
-        return false;
-    }
+    
     else if(cpassword=="" || cpassword!=password){
         document.getElementById("p5").innerHTML = "Confirm your password";
         return false;
@@ -88,15 +77,18 @@ document.getElementById("strength").setAttribute("hidden", true);
     
 function passwordChanged() {
     var strength = document.getElementById("strength");
-    var strongRegex = new RegExp("^(?=.{16,})(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*\\W).*$", "g");
-    var mediumRegex = new RegExp("^(?=.{12,})(((?=.*[A-Z])(?=.*[a-z]))|((?=.*[A-Z])(?=.*[0-9]))|((?=.*[a-z])(?=.*[0-9]))).*$", "g");
-    var enoughRegex = new RegExp("(?=.{8,}).*", "g");
+    var strongRegex = new RegExp("^(?=.{16,})");
+    var mediumRegex = new RegExp("^(?=.{12,})");
+    var enoughRegex = new RegExp("(?=.{8,})");
     var pwd = document.getElementById("pass");
      if (strongRegex.test(pwd.value)) {
     strength.innerHTML = "<span style='color:green'>Strong!</span>";
     } else if (mediumRegex.test(pwd.value)) {
     strength.innerHTML = "<span style='color:orange'>Medium!</span>";
-    } else { 
+    } 
+    else { 
     strength.innerHTML = "<span style='color:red'>Weak!</span>";
     }
-    }}
+}
+
+    
