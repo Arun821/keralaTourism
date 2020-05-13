@@ -1,4 +1,4 @@
-.n{
+ .n{
     width: 100%;
     
 
@@ -161,7 +161,7 @@ img {vertical-align: middle;}
     
 }
 .inputWithIcon input[type="text"], .inputWithIcon input[type="password"], .inputWithIcon input[type="email"]{
-    color: lavender;
+    color: white;
     padding-left: 50px;
     background: transparent;
 }
@@ -175,17 +175,30 @@ img {vertical-align: middle;}
     padding-left: 10px;
 }
 input[type="email"]::-webkit-input-placeholder {
-    color: blue !important;
+    color: rgb(252, 250, 250) !important;
     opacity: 1;
     }
 input[type="password"]::-webkit-input-placeholder {
-    color: blue !important;
+    color: rgb(255, 251, 251) !important;
     opacity: 1;
     }
 input[type="text"]::-webkit-input-placeholder {
-    color: blue !important;
+    color: rgb(255, 255, 255) !important;
     opacity: 1;
     }
+#eye1{
+    
+    left: 90%;
+    top: 59%;
+    cursor: pointer;
+
+}
+#eye2{
+    display: none;
+    left: 90%;
+    top: 59%;
+    cursor: pointer;
+}
 
 /* ............................sign up ends................... */
 .bc{
@@ -223,7 +236,7 @@ input[type="text"]::-webkit-input-placeholder {
 .bg{
     background-color: rgba(28, 32, 30, 0.342);
     height: 100px;
-    width: auto;
+    width: 50% auto;
     
 }
 
@@ -293,7 +306,7 @@ div.gallery {
     font-size: 70px;
     font-weight: 800;
     color:rgba(225,225,225,1);
-    width: auto;
+    width: 100%;
     height: auto;
 }
 .bc2{
@@ -407,9 +420,9 @@ div.gallery {
     outline: none;
     color: rgb(247, 244, 244);
     border-radius: 24px;
-    transition: 0.25s;
+    transition: .25s;
 }
-.box input[type= "email"]:focus, .box input[type= "password"]:focus{
+.box input[type= "email"]:focus-within, .box input[type= "password"]:focus{
     width: 280px;
     border-color: yellow;
 }
@@ -456,76 +469,151 @@ bottom: 0;
 /* ..................animation................. */
 /*..............................Login page....................*/
 
-.bdy1{
-    background: url('https://wallpaperaccess.com/full/1635203.jpg') no-repeat;
-    background-position: unset;
+
+.body{
+    background: url('https://c0.wallpaperflare.com/preview/519/502/435/india-thrissur-color-fire.jpg') no-repeat;
+    background-size: cover;
+    height: auto;
 }
-.login-box{
+
+#myForm1{
+    margin-top: 50px;
+}
+.foter{
+    width: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.301);
+    position: absolute;
+    bottom: 0;
+}
+/*.......................Forget password...................*/
+.forgetpass{
     width: 500px;
     height: auto;
     margin: 0 auto;
     position: relative;
     background: rgb(0, 0,0,0.4);
     text-align: center;
-    margin-top: 100px;
+    margin-top: 170px;
     padding: 35px;
     border: 1px solid #fff;
     -webkit-border-radius: 70px 0 70px 0;
     -moz-border-radius:70px 0 70px 0;
     border-radius: 70px 0 70px 0;
     display: block;
+    color: white;
+    /*top: -387px;*/
+
 }
-input{
-    width: 100%;
-    height: 50px;
-    border-radius: 15px 0 15px 0;
-    border: 1px solid #fff;
-    margin-bottom: 15px;
-    background-color: transparent;
-    color: #fff;
-    outline: none;
-    
+.hid{
+    visibility: hidden;
 }
-.login-box p{
-    text-align: left;
-    color: seashell;
-    font-family: 'Aguafina Script', cursive;
-    font-weight: bold;
-    padding-top: 10px;
+input[type="email"]::-webkit-input-placeholder{
+    color: lightgoldenrodyellow;
 }
 
-.login-box input[type="submit"]:hover{
-    color: #000;
-    
-    background: rgba(11, 44, 27, 0.158);
-}
-.login-box input[type="submit"]{
-    font-family: 'Shadows Into Light', cursive;
-    width: 50%;
+.forgetpass button{
     border-radius: 50px;
+    background: transparent;
+    border: none;
+    color: white;
+    margin-top: 15px;
+    
+}
+.forgetpass button:hover{
+    background: rgb(36, 111, 250);
+}
+
+.n1{
+    padding-top: 5px;
+    background: wheat;
+    display: inline;
+    align-self: flex-end;
+}
+.tx1{
+    padding-top: 20px;
+}
+.changepass{
+    width: 500px;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    background: rgb(0, 0,0,0.4);
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 30px;
+    padding: 40px;
+    border: 1px solid #fff;
+    -webkit-border-radius: 70px 0px 70px 0;
+    -moz-border-radius:70px 0px 70px 0;
+    border-radius: 70px 0 70px 0;
+    display: block;
+    color: white;
+     
+    
 
 }
-.login-box h1{
-    text-transform: uppercase;
-    color: wheat;
-    font-family: 'Aguafina Script', cursive;
-    font-weight: bold;
+.otp input[type="text"]{
+    width: 20px;
+    border-radius: 0 0 0 0;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    margin-right: 10px ;
+    top: -50px;
+    text-align: center;
+    font-size: 1rem;
+    height: 15px;
 }
-.login-box h5{
-    color: wheat;
-    font-family: 'Aguafina Script', cursive;
-    font-weight: bold;
+.changepass h1{
+    text-align: center;
 }
+.changepass button{
+    float: right;
+    border-radius: 50px;
+    background: transparent;
+    border: none;
+    color: white;
+}
+.changepass button:hover{
+    background: rgb(36, 111, 250);
+}
+.changepass i{
+    position: absolute;
+    margin-top: -50px;
+    margin-left: -3vh;
+    cursor: pointer;
+}
+.changepass p{
+    text-align: start;
+}
+.rest{
+    border-radius: 50px;
+    width: 50px;
+    height: 27px;
+    border: none;
+    float: left;
+}
+.rest:hover{
+    background: rgb(36, 111, 250);
+}
+.n{
+    margin-top: 10px;
+}
+
 /*..............footer.................*/
 .fotr{
     width: 100%;
     background: #71717157;
     text-align: center;
     height: 30px;
-    margin-top: 45px;
+    margin-top: 950px;
+    position: sticky;
+    
 }
 .hr{
     color: rgba(11, 44, 27, 0.747);
     text-decoration: none;
 }
+
 
